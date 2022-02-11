@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tianyi Ticket</title>
+    <base href="/">
+    <link rel="stylesheet"  href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <a id="logo" href="http://localhost:8000"><div id="logo-img"></div></a>
+        <nav class="navbar">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:8000/search">Search</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:8000/products">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:8000">Home</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1><%= productName %></h1>
+        <p>Let's see the details of <%= productName %> below.</p>
+        <hr>
+        <img class="individual_poster" src="img/<%=productId%>.png"></img>
+        
+        <table>
+            <tr> <td>id： <%= productId %></td>  </tr>
+            <tr> <td><%= productName %></td> </tr>
+            <tr> <td><%= productDate %></td> </tr>
+            <tr> <td><%= productTime %></td> </tr>
+            <tr> <td><%= productLocation %></td> </td></tr>
+            <tr> <td><%= productPrice %></td> </tr>
+      </table>
+    </section>
+</body>
+</html>

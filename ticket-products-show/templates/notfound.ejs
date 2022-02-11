@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <a id="logo" href="http://localhost:8000"><div id="logo-img"></div></a>
+        <nav class="navbar">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:8000/search">Search</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:8000/products">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:8000">Home</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Connot find product with id: <%= searchterm %>.</h1>
+        <a href="http://localhost:8000"><p>Back to home.</p></a>
+    </section>
+
+</body>
+</html>

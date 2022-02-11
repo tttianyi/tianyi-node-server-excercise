@@ -1,0 +1,55 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Tianyi Ticket</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header>
+    <a id="logo" href="http://localhost:8000"><div id="logo-img"></div></a>
+    <nav class="navbar">
+      <ul class="nav">
+          <li class="nav-item">
+              <a class="nav-link" href="http://localhost:8000/search">Search</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="http://localhost:8000/products">Products</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="http://localhost:8000">Home</a>
+          </li>
+      </ul>
+  </nav>
+  </header>
+
+  <section>
+    <h1>Recent Musicals</h1>
+    <p>Here are recently shows, please click to see more information.</p>
+    <hr>
+    <div class="container">
+        <% for(var key in product) { %>  
+          <div class="products">
+            <a class="link" href= "products/<%=product[key].id%>" >
+              <img class="poster" src="img/<%=product[key].id%>.png"></img>
+            </a>
+          </div>
+        <% } %>
+        </div>
+    </section>
+
+    <section>
+      <table>
+          <tr><% for(var key in product) { %>
+            <td>
+              <a class="link" href= "products/<%=product[key].id%>" ><%= product[key].name %>
+              </a>
+            </td><% } %>
+          </tr>
+      
+          <tr><% for(var key in product) { %><td><%= product[key].date %></td><% } %></tr>
+          <tr><% for(var key in product) { %><td><%= product[key].time %></td><% } %></tr>
+    </table>
+  </section>
+</body>
+</html>
