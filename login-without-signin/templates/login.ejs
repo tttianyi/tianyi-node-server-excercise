@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tianyi System</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <a id="logo" href="http://localhost:8000"><div id="logo-img"></div></a>
+        <nav class="navbar">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:8000/login">Log in</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:8000">Home</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Log in</h1> 
+        <p>Please enter your username and password!</p>
+        <hr>
+        <form action="/login" method="post">
+            <br>
+            <div>Username: <input type="text" name="username"></div>
+            <br>
+            <div>Password: <input type="password" name="password"></div>
+            <br>
+            <div><input type="submit"></div>
+        </form>
+    </section>
+
+</body>
+</html>
